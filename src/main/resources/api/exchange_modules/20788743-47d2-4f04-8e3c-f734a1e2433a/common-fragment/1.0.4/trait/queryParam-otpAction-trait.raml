@@ -1,0 +1,10 @@
+#%RAML 1.0 Trait
+queryParameters:
+  otpAction:
+    description: This queryparam tell about operation related to otp like create, resend or verify OTP.
+    required: true
+    type: string
+    enum:
+      - createOTP
+      - verifyOTP
+    example: "createOTP"

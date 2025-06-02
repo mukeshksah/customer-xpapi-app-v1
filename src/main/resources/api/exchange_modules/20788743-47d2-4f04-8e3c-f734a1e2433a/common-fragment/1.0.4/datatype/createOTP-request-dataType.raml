@@ -1,0 +1,39 @@
+#%RAML 1.0 DataType
+
+type: object
+properties:
+  createOTPRequest:
+    required: true
+    type: object
+    properties:
+      contactType:
+        required: true
+        type: string
+        enum:
+          - email
+          - mobile
+        example: "email"
+      captchaToken:
+        required: true
+        type: string
+        example: "ajdjdhfjdhgj"
+      email:
+        required: false
+        type: string
+        pattern: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+        example: "developerguide@gmail.com"
+      countryCode:
+        required: false
+        type: string
+        example: "+91"
+      mobile:
+        required: false
+        type: string
+        example: "8564125846"
+      locale:
+        required: true
+        type: string
+        enum:
+          - en
+          - hi
+        example: "hi"

@@ -1,0 +1,10 @@
+{
+  "msg": "failed operation",
+  "code": 401,
+  "transactionId": "dbfhjsdbhfbdo8ryt876t75tykjhgtfgbvgh",
+  "error": {
+    "type": "Un_Authorized",
+    "title": "UnAuthorized",
+    "details": "The Request is not Authorized"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "msg": "failed operation",
+  "code": 400,
+  "transactionId": "dbfhjsdbhfbdo8ryt876t75tykjhgtfgbvgh",
+  "error": {
+    "type": "BAD_REQUEST",
+    "title": "Invalid Request",
+    "details": "The input contains invalid data"
+  }
+}

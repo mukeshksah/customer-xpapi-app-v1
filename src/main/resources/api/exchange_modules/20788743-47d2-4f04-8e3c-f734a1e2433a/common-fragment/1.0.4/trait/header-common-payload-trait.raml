@@ -1,0 +1,18 @@
+#%RAML 1.0 Trait
+
+headers:
+  Content-Type:
+    required: true
+    type: string
+    example: "application/json"
+  Accept:
+    required: true
+    type: string
+    example: "application/json"
+  Accept-Language:
+    required: true
+    type: string
+    enum:
+      - en-US
+      - hi-IN
+    example: "hi-IN"

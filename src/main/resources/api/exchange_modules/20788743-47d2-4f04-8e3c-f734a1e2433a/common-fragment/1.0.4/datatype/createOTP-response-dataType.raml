@@ -1,0 +1,15 @@
+#%RAML 1.0 NamedExample
+
+type: object 
+properties: 
+  contactType: 
+    required: true
+    type: string
+    enum:
+      - email
+      - mobile
+    example: "email"
+  username:
+    required: false
+    type: string
+    example: "7411764131"

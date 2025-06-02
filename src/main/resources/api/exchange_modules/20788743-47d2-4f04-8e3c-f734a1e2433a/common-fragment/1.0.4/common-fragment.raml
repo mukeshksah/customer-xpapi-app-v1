@@ -1,0 +1,13 @@
+#%RAML 1.0 Library
+usage:
+
+traits:
+  header-api-key: !include trait/header-apikey-security-trait.raml
+  header-common-payload-methdata: !include trait/header-common-payload-trait.raml
+  header-transactionId: !include trait/header-transactionId-trait.raml
+  queryParam-featureName: !include trait/queryParam-featureName-trait.raml 
+  queryParam-otpAction: !include trait/queryParam-otpAction-trait.raml
+  common-error: !include trait/common-error-trait.raml
+types:
+  createOTP-request: !include datatype/createOTP-request-dataType.raml 
+  createOTP-response: !include datatype/createOTP-response-dataType.raml

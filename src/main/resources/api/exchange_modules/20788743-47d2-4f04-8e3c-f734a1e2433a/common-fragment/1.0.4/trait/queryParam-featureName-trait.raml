@@ -1,0 +1,10 @@
+#%RAML 1.0 Trait
+queryParameters:
+  featureName:
+    description: This queryparam contains the feature name like CWP( customer without policy) and PO (policy ownered customers ).
+    required: true
+    type: string
+    enum:
+      - cwp
+      - po
+    example: "cwp"

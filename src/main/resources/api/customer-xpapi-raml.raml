@@ -1,0 +1,25 @@
+#%RAML 1.0
+title: customer-xpapi-raml
+description: This RAML is designed to describe the behaviour of customer onboarding related API like customer registration, login, reset credential, forgot credential etc
+
+uses:
+  common-fragment: exchange_modules/20788743-47d2-4f04-8e3c-f734a1e2433a/common-fragment/1.0.4/common-fragment.raml
+
+/customers:
+  /registrations:
+  post:
+    is:
+      - common-fragment.header-api-key
+      - common-fragment.header-transactionId
+      - common-fragment.header-common-payload-methdata
+      - common-fragment.queryParam-otpAction
+      - common-fragment.queryParam-featureName
+      - common-fragment.common-error
+    body:
+      application/json:
+        type: common-fragment.createOTP-request
+    responses:
+      200:
+        body:
+          application/json:
+            type: common-fragment.createOTP-response
